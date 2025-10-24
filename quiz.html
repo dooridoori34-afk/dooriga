@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Computer Networks Quiz (15 Questions)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      color: #333;
+    }
+    .question {
+      background: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .feedback {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+    .correct {
+      color: green;
+    }
+    .incorrect {
+      color: red;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h2>Computer Networks Quiz (15 Questions)</h2>
+
+  <div class="question" id="q1div">
+    <p>1. Consider different activities related to email:<br>
+    m1: Send an email from a mail client to a mail server<br>
+    m2: Download an email from mailbox server to a mail client<br>
+    m3: Checking email in a web browser<br>
+    Which is the application level protocol used in each activity?</p>
+    <label><input type="radio" name="q1" value="a"> m1: HTTP m2: SMTP m3: POP</label><br>
+    <label><input type="radio" name="q1" value="b"> m1: SMTP m2: FTP m3: HTTP</label><br>
+    <label><input type="radio" name="q1" value="c"> m1: SMTP m2: POP m3: HTTP</label><br>
+    <label><input type="radio" name="q1" value="d"> m1: POP m2: SMTP m3: IMAP</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q2div">
+    <p>2. Which of the following protocols is used by email server to maintain a central repository that can be accessed from any machine?</p>
+    <label><input type="radio" name="q2" value="a"> POP3</label><br>
+    <label><input type="radio" name="q2" value="b"> IMAP</label><br>
+    <label><input type="radio" name="q2" value="c"> SMTP</label><br>
+    <label><input type="radio" name="q2" value="d"> DMSP</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q3div">
+    <p>3. The maximum payload of a TCP segment is:</p>
+    <label><input type="radio" name="q3" value="a"> 65,535</label><br>
+    <label><input type="radio" name="q3" value="b"> 65,515</label><br>
+    <label><input type="radio" name="q3" value="c"> 65,495</label><br>
+    <label><input type="radio" name="q3" value="d"> 65,475</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q4div">
+    <p>4. The protocol data unit for the transport layer in the internet stack is:</p>
+    <label><input type="radio" name="q4" value="a"> Segment</label><br>
+    <label><input type="radio" name="q4" value="b"> Message</label><br>
+    <label><input type="radio" name="q4" value="c"> Datagram</label><br>
+    <label><input type="radio" name="q4" value="d"> Frame</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q5div">
+    <p>5. An ACK number of 1000 in TCP always means that:</p>
+    <label><input type="radio" name="q5" value="a"> 999 bytes have been successfully received</label><br>
+    <label><input type="radio" name="q5" value="b"> 1000 bytes have been successfully received</label><br>
+    <label><input type="radio" name="q5" value="c"> 1001 bytes have been successfully received</label><br>
+    <label><input type="radio" name="q5" value="d"> None of the above</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q6div">
+    <p>6. What is the maximum size of data that the application layer can pass on to the TCP layer below?</p>
+    <label><input type="radio" name="q6" value="a"> Any size</label><br>
+    <label><input type="radio" name="q6" value="b"> 2¹⁶ bytes - size of TCP header</label><br>
+    <label><input type="radio" name="q6" value="c"> 2¹⁶ bytes</label><br>
+    <label><input type="radio" name="q6" value="d"> 1500</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q7div">
+    <p>7. Which of the following is not a field in TCP header?</p>
+    <label><input type="radio" name="q7" value="a"> Sequence number</label><br>
+    <label><input type="radio" name="q7" value="b"> Fragment offset</label><br>
+    <label><input type="radio" name="q7" value="c"> Checksum</label><br>
+    <label><input type="radio" name="q7" value="d"> Window size</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q8div">
+    <p>8. Which of the following control fields in TCP header is used to specify whether the sender has no more data to transmit?</p>
+    <label><input type="radio" name="q8" value="a"> FIN</label><br>
+    <label><input type="radio" name="q8" value="b"> RST</label><br>
+    <label><input type="radio" name="q8" value="c"> SYN</label><br>
+    <label><input type="radio" name="q8" value="d"> PSH</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q9div">
+    <p>9. The broadcast address for IP network 172.16.0.0 with subnet mask 255.255.0.0 is:</p>
+    <label><input type="radio" name="q9" value="a"> 172.16.0.255</label><br>
+    <label><input type="radio" name="q9" value="b"> 172.16.255.255</label><br>
+    <label><input type="radio" name="q9" value="c"> 255.255.255.255</label><br>
+    <label><input type="radio" name="q9" value="d"> 172.255.255.255</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q10div">
+    <p>10. In classful addressing, first four bits in Class A IP address is:</p>
+    <label><input type="radio" name="q10" value="a"> 1010</label><br>
+    <label><input type="radio" name="q10" value="b"> 1100</label><br>
+    <label><input type="radio" name="q10" value="c"> 1011</label><br>
+    <label><input type="radio" name="q10" value="d"> 1110</label><br>
+    <label><input type="radio" name="q10" value="e"> (A), (B), (C) and (D) are wrong</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q11div">
+    <p>11. The network 198.78.41.0 is a:</p>
+    <label><input type="radio" name="q11" value="a"> Class A network</label><br>
+    <label><input type="radio" name="q11" value="b"> Class B network</label><br>
+    <label><input type="radio" name="q11" value="c"> Class C network</label><br>
+    <label><input type="radio" name="q11" value="d"> Class D network</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q12div">
+    <p>12. The default subnet mask for a class B network can be:</p>
+    <label><input type="radio" name="q12" value="a"> 255.255.255.0</label><br>
+    <label><input type="radio" name="q12" value="b"> 255.0.0.0</label><br>
+    <label><input type="radio" name="q12" value="c"> 255.255.192.0</label><br>
+    <label><input type="radio" name="q12" value="d"> 255.255.0.0</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q13div">
+    <p>13. The message 11001001 is to be transmitted using the CRC polynomial x³ + 1 to protect it from errors. The message that should be transmitted is:</p>
+    <label><input type="radio" name="q13" value="a"> 11001001000</label><br>
+    <label><input type="radio" name="q13" value="b"> 11001001011</label><br>
+    <label><input type="radio" name="q13" value="c"> 11001010</label><br>
+    <label><input type="radio" name="q13" value="d"> 110010010011</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q14div">
+    <p>14. Which of the following devices takes data sent from one network device and forwards it to the destination node based on MAC address?</p>
+    <label><input type="radio" name="q14" value="a"> Hub</label><br>
+    <label><input type="radio" name="q14" value="b"> Modem</label><br>
+    <label><input type="radio" name="q14" value="c"> Switch</label><br>
+    <label><input type="radio" name="q14" value="d"> Gateway</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question" id="q15div">
+    <p>15. Which of the following protocol is used for transferring electronic mail messages from one machine to another?</p>
+    <label><input type="radio" name="q15" value="a"> TELNET</label><br>
+    <label><input type="radio" name="q15" value="b"> FTP</label><br>
+    <label><input type="radio" name="q15" value="c"> SNMP</label><br>
+    <label><input type="radio" name="q15" value="d"> SMTP</label><br>
+    <div class="feedback"></div>
+  </div>
+
+  <button onclick="checkAnswers()">Submit</button>
+  <p id="result"></p>
+
+  <script>
+    const answers = {
+      q1: "c",
+      q2: "b",
+      q3: "c",
+      q4: "a",
+      q5: "d",
+      q6: "a",
+      q7: "b",
+      q8: "a",
+      q9: "b",
+      q10: "e",
+      q11: "c",
+      q12: "d",
+      q13: "b",
+      q14: "c",
+      q15: "d"
+    };
+
+    function checkAnswers() {
+      let score = 0;
+      const total = Object.keys(answers).length;
+
+      document.querySelectorAll('.feedback').forEach(div => {
+        div.textContent = '';
+        div.className = "feedback";
+      });
+
+      for (const q in answers) {
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        const feedbackDiv = document.querySelector(`#${q}div .feedback`);
+
+        if (selected) {
+          if (selected.value === answers[q]) {
+            score++;
+            feedbackDiv.textContent = "✅ Correct! +1";
+            feedbackDiv.classList.add("correct");
+          } else {
+            feedbackDiv.textContent = `❌ Incorrect! Correct answer: "${answers[q].toUpperCase()}"`;
+            feedbackDiv.classList.add("incorrect");
+          }
+        } else {
+          feedbackDiv.textContent = "⚠️ No answer selected";
+          feedbackDiv.classList.add("incorrect");
+        }
+      }
+
+      document.getElementById("result").textContent = `Your Score: ${score} / ${total}`;
+    }
+  </script>
+</body>
+</html>
